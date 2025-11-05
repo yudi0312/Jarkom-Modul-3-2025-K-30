@@ -577,17 +577,16 @@ options {
 
 Setelah itu `service named restart` dan update nameserver ke amdir `echo "nameserver 192.226.3.2" > /etc/resolv.conf`
 
-# Test query yang sama seperti di Erendis
-
+Test query yang sama seperti di Erendis
 nslookup elros.k30.com
 nslookup pharazon.k30.com
 nslookup www.k30.com
+
 <img width="580" height="488" alt="Screenshot 2025-11-05 214126" src="https://github.com/user-attachments/assets/41bd4450-48f7-4829-a00b-3eeadc4774f0" />
 
 <img width="633" height="492" alt="Screenshot 2025-11-05 214131" src="https://github.com/user-attachments/assets/fe7f3e5b-3f26-4fee-98c7-deb515c255cb" />
 
-# Test TXT records
-
+Test TXT records
 dig elros.k30.com TXT
 dig pharazon.k30.com TXT
 
