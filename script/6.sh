@@ -4,18 +4,21 @@ nano /etc/dhcp/dhcpd.conf
 option domain-name-servers 192.226.3.2;
 
 # Menjadi:
-option domain-name-servers 192.226.3.2, 192.226.2.2;
+option domain-name-servers 192.226.3.2, 192.226.3.3;
 
 service isc-dhcp-server restart
 
 # Di client dynamic (Gilgalad/Amandil)
-dhclient -r eth0
-dhclient eth0
+apt update
+apt install -y isc-dhcp-client
 
+dhclient -r eth0
+dhclient -v eth0
+    
 service networking restart
 
-cat /etc/resolv.conf
-# Harus muncul:
-# nameserver 192.226.3.2
-# nameserver 192.226.2.2
+# Di aldarion
+
+cat /var/lib/dhcp/dhcpd.leases
+
 

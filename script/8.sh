@@ -2,7 +2,7 @@
 apt-get update
 apt-get install -y mariadb-server
 
-service mysql start
+service mariadb start
 
 mysql_secure_installation
 
@@ -40,11 +40,11 @@ bind-address = 127.0.0.1
 # Menjadi:
 bind-address = 0.0.0.0
 
-service mysql restart
+service mariadb restart
 netstat -tulpn | grep 3306
 # Expected: 0.0.0.0:3306
 
-mysql -u userjarkom -ppasswordjarkom -h 192.226.3.3 dbjarkom
+mysql -u userjarkom -ppasswordjarkom -h 192.226.4.3 dbjarkom
 
 # ELendil, Isildur, dan Anarion
 # Di Elendil / Isildur / Anarion

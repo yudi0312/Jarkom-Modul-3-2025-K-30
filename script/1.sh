@@ -61,39 +61,39 @@ iface eth0 inet static
 #Amdir
 auto eth0
 iface eth0 inet static
-    address 192.226.2.2
-    netmask 255.255.255.0
-    gateway 192.226.2.1
-    up echo "nameserver 192.168.122.1" > /etc/resolv.conf
-
-#Palantir
-auto eth0
-iface eth0 inet static
     address 192.226.3.3
     netmask 255.255.255.0
     gateway 192.226.3.1
     up echo "nameserver 192.168.122.1" > /etc/resolv.conf
 
+#Palantir
+auto eth0
+iface eth0 inet static
+    address 192.226.4.3
+    netmask 255.255.255.0
+    gateway 192.226.4.1
+    up echo "nameserver 192.168.122.1" > /etc/resolv.conf
+
 #Narvi
 auto eth0
 iface eth0 inet static
-    address 192.226.2.3
+    address 192.226.4.4
     netmask 255.255.255.0
-    gateway 192.226.2.1
+    gateway 192.226.4.1
     up echo "nameserver 192.168.122.1" > /etc/resolv.conf
 
 #Elros
 auto eth0
 iface eth0 inet static
-    address 192.226.3.4
+    address 192.226.1.6
     netmask 255.255.255.0
-    gateway 192.226.3.1
+    gateway 192.226.1.1
     up echo "nameserver 192.168.122.1" > /etc/resolv.conf
 
 #Pharazon
 auto eth0
 iface eth0 inet static
-    address 192.226.2.4
+    address 192.226.2.2
     netmask 255.255.255.0
     gateway 192.226.2.1
     up echo "nameserver 192.168.122.1" > /etc/resolv.conf
@@ -125,7 +125,7 @@ iface eth0 inet static
 #Galadriel
 auto eth0
 iface eth0 inet static
-    address 192.226.2.5
+    address 192.226.2.6
     netmask 255.255.255.0
     gateway 192.226.2.1
     up echo "nameserver 192.168.122.1" > /etc/resolv.conf
@@ -133,7 +133,7 @@ iface eth0 inet static
 #Celeborn
 auto eth0
 iface eth0 inet static
-    address 192.226.2.6
+    address 192.226.2.5
     netmask 255.255.255.0
     gateway 192.226.2.1
     up echo "nameserver 192.168.122.1" > /etc/resolv.conf
@@ -141,7 +141,7 @@ iface eth0 inet static
 #Oropher
 auto eth0
 iface eth0 inet static
-    address 192.226.2.7
+    address 192.226.2.4
     netmask 255.255.255.0
     gateway 192.226.2.1
     up echo "nameserver 192.168.122.1" > /etc/resolv.conf
@@ -157,7 +157,7 @@ iface eth0 inet static
 #Celebrimbor
 auto eth0
 iface eth0 inet static
-    address 192.226.2.8
+    address 192.226.2.3
     netmask 255.255.255.0
     gateway 192.226.2.1
     echo "nameserver 192.168.122.1" > /etc/resolv.conf
